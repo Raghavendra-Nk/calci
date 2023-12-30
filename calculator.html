@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALCULATOR</title>
+
+  <link rel="stylesheet" href="calci.css">
+   
+   
+</head>
+<body >
+ 
+  <table>
+    <tr>
+      <td colspan="4"><input type="text" id="display" class="display" disabled></td>
+    </tr>
+    <tr>
+      <td class="clear-button" onclick="clearDisplay() " >C</td>
+      <td class="delete-button" onclick="deleteLast()">Del</td>
+      <td onclick="toggleSign()">+/-</td>
+      <td onclick="appendToDisplay('/')">/</td>
+      
+    </tr>
+    <tr>
+      <td onclick="appendToDisplay('7')">7</td>
+      <td onclick="appendToDisplay('8')">8</td>
+      <td onclick="appendToDisplay('9')">9</td>
+      <td onclick="appendToDisplay('*')">x</td>
+    </tr>
+    <tr>
+      <td onclick="appendToDisplay('4')">4</td>
+      <td onclick="appendToDisplay('5')">5</td>
+      <td onclick="appendToDisplay('6')">6</td>
+      <td onclick="appendToDisplay('-')">-</td>
+    </tr>
+    <tr>
+      <td onclick="appendToDisplay('1')">1</td>
+      <td onclick="appendToDisplay('2')">2</td>
+      <td onclick="appendToDisplay('3')">3</td>
+      <td onclick="appendToDisplay('+')">+</td>
+    </tr>
+    <tr>
+      <td colspan="2" onclick="appendToDisplay('0')">0</td>
+      <td onclick="appendToDisplay('.')">.</td>
+      <td class="equal-button" onclick="calculateResult()">=</td>
+      
+    </tr>
+  </table>
+
+  <script src="calculator.js"></script>
+
+</body>
+</html>
